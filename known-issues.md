@@ -1,30 +1,54 @@
-# Known Issues — molecule-ai-plugin-molecule-hitl
-
-Format per entry:
-```
-## KI-N — Short title
-
-**File:** `<path>:<line>`
-**Status:** TODO / identified / partially fixed
-**Severity:** Critical / High / Medium / Low
-
-### Symptom
-...
-
-### Impact
-...
-
-### Suggested fix
-...
----
-```
+# Known Issues — molecule-hitl
 
 ---
 
-**Policy:** File a GitHub issue before patching silently.
+## Active Issues
 
-**Severity Definitions**
-- **Critical:** Plugin fails to install or crashes agent runtime
-- **High:** Plugin produces wrong/broken behavior in normal use
-- **Medium:** UX degraded, workaround exists
-- **Low:** Cosmetic, negligible user impact
+*(None currently open. This section is updated when issues are filed.)*
+
+---
+
+## Recently Resolved
+
+*(No recently resolved issues.)*
+
+---
+
+## How to Update This File
+
+When a new issue is identified:
+1. Add it under **Active Issues** using the template below
+2. Include: symptom, cause (if known), workaround
+3. When fixed, move to **Recently Resolved** and note the fix version
+
+### Issue Template
+
+```markdown
+## [TICKET-NUMBER] <Short Title>
+
+**Severity:** P0 / P1 / P2 / P3
+**Status:** Workaround / Fix in progress / Fix available
+**Affected versions:** All / vX.Y.Z+
+
+**Symptoms:**
+**Cause:**
+**Workaround:**
+**Fix (if available):**
+```
+
+---
+
+## Severity Definitions
+
+| Level | Description |
+|---|---|
+| P0 | Gate bypasses approval; no workaround |
+| P1 | Approval request never reaches human; task hangs |
+| P2 | Notification only; no blocking behaviour |
+| P3 | Cosmetic or documentation issue |
+
+---
+
+## Reporting
+
+Use the Molecule-AI/internal issue tracker. Tag with `plugin-molecule-hitl`.
