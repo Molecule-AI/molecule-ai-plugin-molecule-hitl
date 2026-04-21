@@ -1,6 +1,7 @@
 ---
 name: hitl-gates
 description: "Gate irreversible actions behind a human approval request. Use when an async callable (tool, method, or standalone function) performs a destructive or public action: deployment, deletion, outbound message, or issue/PR creation. Prevents unattended agents from shipping destructive work."
+origin: molecule-hitl
 ---
 
 # HITL Gates
@@ -12,7 +13,7 @@ This skill is the opt-in policy layer that tells an agent *when* to call
 them — the Python implementation is always available; only workspaces that
 install this plugin consult the policy.
 
-## When to use a gate
+## When to Use
 
 Always, before any of these classes of action:
 
